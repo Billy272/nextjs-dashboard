@@ -8,14 +8,18 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@mapbox/node-pre-gyp": "^2.0.0",
     "@tailwindcss/forms": "^0.5.10",
     "@vercel/analytics": "^1.5.0",
     "autoprefixer": "10.4.20",
+    "aws-sdk": "^2.1692.0",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "clsx": "^2.1.1",
+    "mock-aws-s3": "^4.0.2",
     "next": "15.2.0-canary.51",
     "next-auth": "5.0.0-beta.25",
+    "nock": "^14.0.1",
     "pnpm": "^10.3.0",
     "postcss": "8.5.1",
     "postgres": "^3.4.5",
@@ -36,8 +40,10 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "aws-sdk",
       "bcrypt",
-      "esbuild"
+      "esbuild",
+      "sharp"
     ]
   }
 }
